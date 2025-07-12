@@ -13,7 +13,7 @@ if "processed" not in st.session_state:
 
 # Input form
 youtube_link = st.text_input("YouTube Link:")
-key_change = st.slider("Pitch Shift (Semitones)", min_value=-12, max_value=12, value=0)
+key_change = st.slider("Pitch Shift (Semitones)", min_value=-6, max_value=6, value=0)
 
 if st.button("Process"):
     if youtube_link:
